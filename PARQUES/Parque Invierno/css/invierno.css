@@ -1,0 +1,267 @@
+
+.bg-azul-oscuro{
+    background-color:#0b2c56;
+}
+.bg-azul-oscuro-opacity-75{
+background-color: rgba(11, 43, 86, 0.5);
+}
+.bg-azul-oscuro-b{
+    background-color: #0c3e75;
+}
+.bg-azul-claro{
+    background-color: #006ab1;
+}
+.bg-gris{
+    background-color:#f2f4f5;
+}
+.bg-gris-2{
+    background-color: rgb(236, 236, 236);
+}
+.text-azul-oscuro{
+    color:#0b2c56;
+}
+.bg-azul-oscuro-b{
+    color: #0c3e75;
+}
+.text-azul-claro{
+    color: #006ab1;
+}
+.text-gris{
+    color:#f2f4f5;
+}
+.text-justify{
+    text-align: justify;
+}
+
+.a-hover:hover{
+    font-size: 9pt;
+    transform: scaleX(1.1);
+    color: #0b2c56;
+    
+   }
+   .sombra-letras{
+    text-shadow: 1px 1px black, -1px -1px black;
+   }
+
+/* clases personalizadas Inicio */
+.letrape{
+    font-size: 10pt;
+}
+
+.border-banner{
+    border-radius: 20px;
+    border:grey solid 2px;
+}
+
+/*css pagina principal parque invierno*/  
+
+.bordepuri{
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px grey, -5px -5px 10px grey;
+    
+}
+
+.parallaxcovi2 {
+    background-image: url(../img/alargadas/inv-a-11.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+/* clases personalizadas Historia  historia */
+
+.parallaxcovi {
+    background-image: url(../img/alargadas/inv-a-14.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.baner-covi{
+    background-image: url("../img/banner/inv-b-15.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.baner-dos{
+    background-image: url("../img/banner/inv-b-11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.card-sombra{
+    box-shadow: 8px 8px 12px gray;
+}
+.card-sombra:hover{
+    transform: scale(1.05,1.05);
+}
+
+.gris{
+    background-color:#006ab1;
+} 
+.abetos-g{
+    background-image: url("../img/alargadas/pur-a-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+ 
+  .borde1{
+    border-radius: 15px;
+    box-shadow: -15px -15px 20px grey;
+  }
+  .borde-g{
+    border-radius: 15px;
+    box-shadow: 15px 15px 20px grey;
+  }
+  .radius-g{
+    border-radius: 15px;
+    box-shadow:5px 5px 10px grey  ;
+  }
+  .radius-g1{
+    border-radius: 15px;
+    box-shadow:-5px -5px 10px grey  ;
+  }
+  .galeria{
+    border-radius: 20px;
+    box-shadow:5px 5px 5px grey ;
+  }
+  .galeria1{
+    border-radius: 20px;
+    box-shadow:-5px -5px 5px grey ;
+  }
+  .efecto-h{
+    opacity: 90%;
+  }
+  .efecto-h:hover{
+    opacity: 100%;
+    transform: scale(1.1);
+  }
+  .imagen:hover{
+    transform: scale(2,2);
+}
+.imagen{
+    box-shadow: -5px -5px 7px rgb(135, 190, 229)
+}
+
+/*clases personalizadas deporte*/
+
+
+.invierno{
+    background-image: url(../img/alargadas/inv-a-11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+
+}
+
+.opacity{
+
+    opacity: 80%;
+
+}
+    
+.opacity:hover{
+    
+    opacity: 100%;
+    transition: 1s;
+    cursor: pointer;
+    
+}
+.parallaxbelen {
+    background-image: url(../img/alargadas/inv-a-12.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagen:hover{
+    transform: scale(1.02,1.02);
+    transition:0.6s ;    
+}
+.imagen-d:hover{
+    transform: scale(1.02,1.02);
+    transition:0.5s ;    
+}
+.imagen{ transition: 0.6s;}
+.imagen-d{ transition: 0.5s;}
+/* naturaleza */
+.parallaxcharo {
+    background-image: url(../img/alargadas/inv-a-11.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+.baner{
+    background-image: url(../img/banner/inv-b-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.sombra-card{
+    box-shadow: 10px 10px 5px grey;
+}
+.sombra-text{
+    text-shadow: 5px 5px 3px black;
+}
+.border-banner{
+    border-radius: 20px;
+    border:grey solid 2px;
+}
+.sombra-sombra{
+    text-shadow: 1px 1px 1px white;
+}
+
+.baner-nat-1{
+    background-image: url(../img/banner/inv-b-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen-nat-1:hover{
+    transform: scale(1.1,1.1);
+}
+
+.borde-imagen1{
+    border-radius: 20px;
+    border:grey solid 2px;
+}
+
+.sombra-imagen{
+    box-shadow: 10px 10px 5px grey;
+}
+
+.baner-nat-2{
+    background-image: url(../img/banner/inv-b-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.parallaxluz {
+    background-image: url(../img/alargadas/inv-a-11.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagen:hover{
+    transform: scale(1.02,1.02);
+    transition:0.6s ;    
+}
+
+
