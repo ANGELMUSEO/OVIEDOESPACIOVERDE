@@ -1,0 +1,448 @@
+ /* Estilos generales */
+
+/* Contenedor del botón flotante */
+.Nat-floating-container {
+    /* Posicionamiento fijo en la esquina inferior derecha */
+    position: fixed;
+    bottom: 20px; /* Ajustable: Distancia desde el borde inferior */
+    right: 20px; /* Ajustable: Distancia desde el borde derecho */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 10000; /* Ajustable: Nivel de apilamiento */
+}
+
+/* Botón de volver arriba */
+.Nat-scroll-top-button {
+    width: 60px; /* Ajustable: Ancho del botón */
+    height: 60px; /* Ajustable: Altura del botón */
+    border-radius: 50%; /* Forma circular */
+    background-color: #007bff; /* Ajustable: Color de fondo */
+    color: white; /* Ajustable: Color del texto/icono */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px; /* Ajustable: Espacio entre botones */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Ajustable: Sombra */
+    transition: transform 0.3s ease; /* Efecto de hover */
+}
+
+.Nat-scroll-top-button:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Botón flotante principal */
+.Btn-nat-floating-button {
+    width: 60px; /* Ajustable: Ancho del botón */
+    height: 60px; /* Ajustable: Altura del botón */
+    border-radius: 50%; /* Forma circular */
+    background-image: url(../img/logos/ovd-logo-boton.png);
+
+    background-size: 100%; /* Para imagen de fondo si se usa */
+    background-position-y: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Ajustable: Sombra */
+    transition: transform 0.3s ease; /* Efecto de hover */
+    touch-action: none; /* Previene el scroll en dispositivos táctiles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Ajustable: Color del texto */
+    font-weight: bold;
+}
+
+.Btn-nat-floating-button:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Menú de opciones */
+.Nata-floating-options {
+    position: fixed;
+    display: none; /* Inicialmente oculto */
+    flex-direction: column;
+    z-index: 9999; /* Ajustable: Nivel de apilamiento */
+    background-color: rgba(255, 255, 255, 0.4); /* Ajustable: Color de fondo */
+    border-radius: 10px; /* Ajustable: Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Ajustable: Sombra */
+    padding: 10px; /* Ajustable: Espacio interno */
+    max-width: 60vw; /* Ajustable: Ancho máximo */
+    max-height: 80vh; /* Ajustable: Altura máxima */
+    overflow-y: auto; /* Permite scroll si el contenido excede la altura */
+}
+
+.Nata-floating-option {
+    margin: 5px 0; /* Ajustable: Espacio entre opciones */
+    padding: 10px; /* Ajustable: Espacio interno de cada opción */
+    background-color: #f0f0f0; /* Ajustable: Color de fondo */
+    border-radius: 20px; /* Ajustable: Bordes redondeados */
+    text-decoration: none;
+    color: #333; /* Ajustable: Color del texto */
+    transition: background-color 0.3s ease; /* Efecto de hover */
+    white-space: nowrap; /* Evita el salto de línea en el texto */
+}
+
+.Nata-floating-option:hover {
+    background-color: #e0e0e0; /* Ajustable: Color de fondo al pasar el ratón */
+}
+
+.Nata-show {
+    display: flex; /* Clase para mostrar el menú */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .Nata-floating-options {
+        width: 80vw; /* Ajustable: Ancho en dispositivos móviles */
+    }
+}
+.bg-azul-oscuro{
+    background-color:#0b2c56;
+}
+.bg-azul-oscuro-opacity-75{
+background-color: rgba(11, 43, 86, 0.5);
+}
+.bg-azul-oscuro-b{
+    background-color: #0c3e75;
+}
+.bg-azul-claro{
+    background-color: #006ab1;
+}
+.bg-gris{
+    background-color:#f2f4f5;
+}
+.text-azul-oscuro{
+    color:#0b2c56;
+}
+.bg-azul-oscuro-b{
+    color: #0c3e75;
+}
+.text-azul-claro{
+    color: #006ab1;
+}
+.text-gris{
+    color:#f2f4f5;
+}
+.text-justify{
+    text-align: justify;
+}
+/*
+.a-hover:hover{
+    font-size: 9pt;
+    transform: scaleX(1.1);
+    color: #0b2c56;
+    
+   }
+    */
+   .sombra-letras{
+    text-shadow: 1px 1px black, -1px -1px black;
+   }
+   .border-radsom{
+    border-radius: 15px;
+    box-shadow:5px 5px 10px grey  ;
+  }
+.logo-ovd-pie{
+    width:35%;
+    }
+.logo-ovd-pie-md{
+    width:57%;
+}
+.text-politica{
+    font-size: 10pt;
+}
+.w-pie{
+    width: 80%;
+}
+
+
+/* clases personalizadas Inicio */
+.letrape{
+    font-size: 10pt;
+}
+
+.border-banner{
+    border-radius: 20px;
+    border:grey solid 2px;
+}
+
+
+/* Desarrollo efecto parallax*/
+    .parallax-gema {
+        background-image: url(../img/alargadas/pur-a-8.jpg);
+        min-height: 1000px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+
+/* clases personalizadas Historia */
+.baner-g{
+    background-image: url("../img/banner/pur-a-8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.gris{
+    background-color:#006ab1;
+} 
+.abetos-g{
+    background-image: url("../img/alargadas/pur-a-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+ 
+  .borde1{
+    border-radius: 15px;
+    box-shadow: -15px -15px 20px grey;
+  }
+  .borde-g{
+    border-radius: 15px;
+    box-shadow: 15px 15px 20px grey;
+  }
+  .radius-g{
+    border-radius: 15px;
+    box-shadow:5px 5px 10px grey  ;
+  }
+  .radius-g1{
+    border-radius: 15px;
+    box-shadow:-5px -5px 10px grey  ;
+  }
+  .galeria{
+    border-radius: 20px;
+    box-shadow:5px 5px 5px grey ;
+  }
+  .galeria1{
+    border-radius: 20px;
+    box-shadow:-5px -5px 5px grey ;
+  }
+ 
+  .efecto-h{
+    opacity: 90%;
+  }
+  .efecto-h:hover{
+    opacity: 100%;
+    transform: scale(1.1);
+    transition: 0.5s ;
+  }
+  .efecto-h1{
+    opacity: 90%;
+  }
+  .efecto-h1:hover{
+    opacity: 100%;
+    transform: scale(1.1);
+    transition: 0.5s ;
+    box-shadow: 5px 5px 10px grey;
+    text-shadow:2px 2px 2px grey ;
+  }
+
+  .imagen:hover{
+    transform: scale(2,2);
+}
+.imagen{
+    box-shadow: -5px -5px 7px rgb(135, 190, 229)
+}
+
+  
+
+
+/* clases personalizadas Naturaleza */
+
+.text-size {
+    font-size: x-large;
+}
+
+.baner {
+    background-image: url(../img/banner/pur-a-13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sombra-card {
+    box-shadow: 7px 7px 5px grey;
+}
+
+.sombra-text {
+    text-shadow: 5px 5px 3px black;
+}
+
+.border-banner {
+    border-radius: 20px;
+    border: grey solid 2px;
+}
+
+.galeria1 {
+    background-image: url(../img/cuadradas/pur-c-11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.galeria2 {
+    background-image: url(../img/cuadradas/pur-c-18.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.galeria3 {
+    background-image: url(../img/cuadradas/pur-c-9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.galeria4 {
+    background-image: url(../img/cuadradas/pur-c-15.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.abetos {
+    background-image: url("../img/alargadas/pur-a-7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.border-azul-oscuro {
+    border-radius: 20px;
+    border: #0b2c56 solid 2px;
+}
+
+/* esta es la animación de la imagen redonda grande y 3 más pequeñas */
+.imagen:hover {
+    transform: scale(1.3, 1.3);
+    transition: 0.5s;
+}
+
+/* Efecto parallax */
+.parallax-naturaleza {
+    background-image: url(../img/alargadas/pur-a-6.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* para el efecto de las card que se agranda y tiene sombra */
+
+.video-sombra{
+    box-shadow: -7px -7px 5px grey;
+    border-radius: 20px;
+}
+
+/* clases personalizadas Deportes */
+
+.opacity{
+
+    opacity: 80%;
+
+}
+    
+.opacity:hover{
+    
+    opacity: 100%;
+    transition: 1s;
+    cursor: pointer;
+    
+}
+
+.deportes{
+    background-image: url("../img/alargadas/pur-a-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+
+}
+
+.imagen{
+
+transition: 0.6s ;
+
+}
+
+.imagen:hover{
+    transform: scale(1.02,1.02);  
+    transition: 0.6s;  
+}
+
+.sombra{ box-shadow: -4px -4px 2px rgb(0, 153, 255);}  
+.baner{ box-shadow: 10px 10px 8px black , 20px 20px 18px silver ;}
+.card1{box-shadow: -6px -6px 1px rgba(0, 81, 255, 0)  }
+
+.parallax {
+    background-image: url(../img/baner/foto\ 1900x1200.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.parallax2 {
+    background-image: url('../img/alargadas/pur-a-7.jpg');
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* clases personalizadas Otros */
+.bg-fondobanner{
+    background-image: url(../img/banner/pur-a-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border:grey solid 2px;
+   
+}
+.opacity-90{opacity:90%}
+.opacity-90:hover{opacity:100%;
+
+}
+.a-ama{ color:#0b2c56;}
+
+.bg-fondobanner2{
+    background-image: url(../img/cuadradas/pur-c-24.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.parallaxvivero{
+    background-image: url(../img/banner/pur-a-13.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.efecto-v{
+    opacity: 90%;}
+    
+.efecto-v:hover{
+    opacity: 100%;
+    transform: scale(1,2 1,2);
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px grey;
+}
+.bordepuri{
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px grey, -5px -5px 10px grey;
+    
+}
+
+
+
+.parallaxpuri{
+    background-image: url(../img/alargadas/pur-a-12.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
