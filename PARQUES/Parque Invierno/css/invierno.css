@@ -1,0 +1,389 @@
+ /* Estilos generales */
+
+/* Contenedor del botón flotante */
+.Nat-floating-container {
+    /* Posicionamiento fijo en la esquina inferior derecha */
+    position: fixed;
+    bottom: 20px; /* Ajustable: Distancia desde el borde inferior */
+    right: 20px; /* Ajustable: Distancia desde el borde derecho */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 10000; /* Ajustable: Nivel de apilamiento */
+}
+
+/* Botón de volver arriba */
+.Nat-scroll-top-button {
+    width: 60px; /* Ajustable: Ancho del botón */
+    height: 60px; /* Ajustable: Altura del botón */
+    border-radius: 50%; /* Forma circular */
+    background-color: #007bff; /* Ajustable: Color de fondo */
+    color: white; /* Ajustable: Color del texto/icono */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px; /* Ajustable: Espacio entre botones */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Ajustable: Sombra */
+    transition: transform 0.3s ease; /* Efecto de hover */
+}
+
+.Nat-scroll-top-button:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Botón flotante principal */
+.Btn-nat-floating-button {
+    width: 60px; /* Ajustable: Ancho del botón */
+    height: 60px; /* Ajustable: Altura del botón */
+    border-radius: 50%; /* Forma circular */
+    background-image: url(../img/logos/ovd-logo-boton.png);
+
+    background-size: 100%; /* Para imagen de fondo si se usa */
+    background-position-y: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Ajustable: Sombra */
+    transition: transform 0.3s ease; /* Efecto de hover */
+    touch-action: none; /* Previene el scroll en dispositivos táctiles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Ajustable: Color del texto */
+    font-weight: bold;
+}
+
+.Btn-nat-floating-button:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Menú de opciones */
+.Nata-floating-options {
+    position: fixed;
+    display: none; /* Inicialmente oculto */
+    flex-direction: column;
+    z-index: 9999; /* Ajustable: Nivel de apilamiento */
+    background-color: rgba(255, 255, 255, 0.4); /* Ajustable: Color de fondo */
+    border-radius: 10px; /* Ajustable: Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Ajustable: Sombra */
+    padding: 10px; /* Ajustable: Espacio interno */
+    max-width: 60vw; /* Ajustable: Ancho máximo */
+    max-height: 80vh; /* Ajustable: Altura máxima */
+    overflow-y: auto; /* Permite scroll si el contenido excede la altura */
+}
+
+.Nata-floating-option {
+    margin: 5px 0; /* Ajustable: Espacio entre opciones */
+    padding: 10px; /* Ajustable: Espacio interno de cada opción */
+    background-color: #f0f0f0; /* Ajustable: Color de fondo */
+    border-radius: 20px; /* Ajustable: Bordes redondeados */
+    text-decoration: none;
+    color: #333; /* Ajustable: Color del texto */
+    transition: background-color 0.3s ease; /* Efecto de hover */
+    white-space: nowrap; /* Evita el salto de línea en el texto */
+}
+
+.Nata-floating-option:hover {
+    background-color: #e0e0e0; /* Ajustable: Color de fondo al pasar el ratón */
+}
+
+.Nata-show {
+    display: flex; /* Clase para mostrar el menú */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .Nata-floating-options {
+        width: 80vw; /* Ajustable: Ancho en dispositivos móviles */
+    }
+}
+/*
+.bg-azul-oscuro{
+    background-color:#0b2c56;
+}
+.bg-azul-oscuro-opacity-75{
+background-color: rgba(11, 43, 86, 0.5);
+}
+.bg-azul-oscuro-b{
+    background-color: #0c3e75;
+}
+.bg-azul-claro{
+    background-color: #006ab1;
+}
+.bg-gris{
+    background-color:#f2f4f5;
+}
+.text-azul-oscuro{
+    color:#0b2c56;
+}
+.bg-azul-oscuro-b{
+    color: #0c3e75;
+}
+.text-azul-claro{
+    color: #006ab1;
+}
+.text-gris{
+    color:#f2f4f5;
+}
+.text-justify{
+    text-align: justify;
+}
+
+
+.a-hover:hover{
+    font-size: 9pt;
+    transform: scaleX(1.1);
+    color: #0b2c56;
+    
+   }
+   
+   .sombra-letras{
+    text-shadow: 1px 1px black, -1px -1px black;
+   }
+   .border-radsom{
+    border-radius: 15px;
+    box-shadow:5px 5px 10px grey  ;
+  }
+.logo-ovd-pie{
+    width:35%;
+    }
+.logo-ovd-pie-md{
+    width:57%;
+}
+.text-politica{
+    font-size: 10pt;
+}
+.w-pie{
+    width: 80%;
+}
+*/
+/* clases personalizadas Inicio */
+.letrape{
+    font-size: 10pt;
+}
+
+.border-banner{
+    border-radius: 20px;
+    border:grey solid 2px;
+}
+
+/*css pagina principal parque invierno*/  
+
+.bordepuri{
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px grey, -5px -5px 10px grey;
+    
+}
+
+.parallaxcovi2 {
+    background-image: url(../img/alargadas/inv-a-39.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+/* clases personalizadas Historia  historia */
+
+.parallaxcovi{
+    background-image: url(../img/alargadas/inv-a-14.jpg);  
+    min-height: 1000px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.baner-covi{
+    background-image: url("../img/banner/inv-b-15.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.baner-dos{
+    background-image: url("../img/banner/inv-b-11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.card-sombra{
+    box-shadow: 8px 8px 12px gray;
+}
+.card-sombra:hover{
+    transform: scale(1.05,1.05);
+}
+
+.gris{
+    background-color:#006ab1;
+} 
+.abetos-g{
+    background-image: url("../img/alargadas/pur-a-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+ 
+  .borde1{
+    border-radius: 15px;
+    box-shadow: -15px -15px 20px grey;
+  }
+  .borde-g{
+    border-radius: 15px;
+    box-shadow: 15px 15px 20px grey;
+  }
+  .radius-g{
+    border-radius: 15px;
+    box-shadow:5px 5px 10px grey  ;
+  }
+  .radius-g1{
+    border-radius: 15px;
+    box-shadow:-5px -5px 10px grey  ;
+  }
+  .galeria{
+    border-radius: 20px;
+    box-shadow:5px 5px 5px grey ;
+  }
+  .galeria1{
+    border-radius: 20px;
+    box-shadow:-5px -5px 5px grey ;
+  }
+  .efecto-h{
+    opacity: 90%;
+  }
+  .efecto-h:hover{
+    opacity: 100%;
+    transform: scale(1.1);
+  }
+  .imagen:hover{
+    transform: scale(2,2);
+}
+.imagen{
+    box-shadow: -5px -5px 7px rgb(135, 190, 229)
+}
+
+/*clases personalizadas deporte*/
+.banerdeporteaire{
+    background-image: url(../img/banner/inv-b-27.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    border-radius:20px;
+    text-shadow: 5px 5px 3px black;
+
+}
+
+
+.invierno{
+    background-image: url(../img/alargadas/inv-a-41.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+
+}
+
+.opacity{
+
+    opacity: 80%;
+
+}
+    
+.opacity:hover{
+    
+    opacity: 100%;
+    transition: 1s;
+    cursor: pointer;
+    
+}
+.parallaxbelen {
+    background-image: url(../img/alargadas/inv-a-38.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagen:hover{
+    transform: scale(1.02,1.02);
+    transition:0.6s ;    
+}
+.imagen-d:hover{
+    transform: scale(1.02,1.02);
+    transition:0.5s ;    
+}
+.imagen{ transition: 0.6s;}
+.imagen-d{ transition: 0.5s;}
+/* naturaleza */
+.parallaxcharo {
+    background-image: url(../img/alargadas/inv-a-11.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+.baner{
+    background-image: url(../img/banner/inv-b-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.sombra-card{
+    box-shadow: 10px 10px 5px grey;
+}
+.sombra-text{
+    text-shadow: 5px 5px 3px black;
+}
+.border-banner{
+    border-radius: 20px;
+    border:grey solid 2px;
+}
+.sombra-sombra{
+    text-shadow: 1px 1px 1px white;
+}
+
+.baner-nat-1{
+    background-image: url(../img/banner/inv-b-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen-nat-1:hover{
+    transform: scale(1.1,1.1);
+}
+
+.borde-imagen1{
+    border-radius: 20px;
+    border:grey solid 2px;
+}
+
+.sombra-imagen{
+    box-shadow: 10px 10px 5px grey;
+}
+
+.baner-nat-2{
+    background-image: url(../img/banner/inv-b-23.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.parallaxluz {
+    background-image: url(../img/alargadas/inv-a-36.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagen:hover{
+    transform: scale(1.02,1.02);
+    transition:0.6s ;    
+}
+
+
